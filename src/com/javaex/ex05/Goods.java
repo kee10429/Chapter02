@@ -5,7 +5,10 @@ public class Goods {
 	private String name;
 	private int price;
 	
-	//생성자
+	//생성자 - 메모리에 올린다(자동)
+	
+	
+	
 	
 	//매소드
 	//name 등록

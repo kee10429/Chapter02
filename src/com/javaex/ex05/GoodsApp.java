@@ -23,18 +23,12 @@ public class GoodsApp {
 		computer.setPrice(1000000);
 		
 		//니콘출력
-		String cameraName = camera.getName();
-		int cameraPrice = camera.getPrice();
 		camera.showinfo();
 		
 		//머그컵출력
-		String cupName = cup.getName();
-		int cupPrice = cup.getPrice();
 		cup.showinfo();
 		
 		//LG그램출력
-		String computerName = computer.getName();
-		int computerPrice = computer.getPrice();
 		computer.showinfo();
 		
 	}
