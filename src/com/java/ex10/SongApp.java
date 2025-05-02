@@ -3,25 +3,36 @@ package com.java.ex10;
 public class SongApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*
+		Song s01 = new Song();
+		s01.setTitle("좋은날");
+		s01.setArtist("아이유");
+		s01.setAlbum("Real");
+		s01.setComposer("이민수");
+		s01.setYear("2010");
+		s01.setTrack(3);
 		
-		Song iu = new Song("좋은날","아이유","Real","이민수",2010);
-		Song bb = new Song("거짓말","BIGBANG","Always","G-DRAGON",2007,2);
-		Song bk = new Song("벚꽃엔딩","버스커버스커","버스커버스커1집","장범준",2012,4);
+		s01.showInfo();
+		System.out.println("-----------------------------------");
+		*/
 		
-		iu.showInfo();
-		bb.showInfo();
-		bk.showInfo();
+		/*
+		Song s02 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGN", "2007");     
+		s02.showInfo();
+		*/
 		
 		
-		System.out.println("---------------------------------------");
-		Song s03 = new Song ("거짓말","BIGBANG","Always","G-DRAGON",2007);
+		System.out.println("-----------------------------------");
 		
-		//this(5)를 호출
-		this(title, artist, album, composer, year);
+		Song s03 = new Song("거짓말", "BIGBANG", "Always", "G-DRAGN", "2007", 100);
+		s03.showInfo();
+	
+		/*
+		Song("거짓말", "빅뱅")
+		Song("거짓말", "always")
+		Song(노래제목, 트랙)
+		*/
 		
-		this.track = track;
-		System.out.println(song(6));
 	}
-
+	
 }

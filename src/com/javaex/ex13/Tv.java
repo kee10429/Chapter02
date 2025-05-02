@@ -71,14 +71,7 @@ public class Tv {
 	//매소드-일반
 	
 	public void status() {
-		String p;
-		if(power=true) {
-			p = "on";
-		} else {
-			p = "off";
-		}
-		
-		System.out.println("파워:"+p+"   "+"채널:"+channel+"   "+"볼륨:"+volume);
+		System.out.println("파워:"+power+"   "+"채널:"+channel+"   "+"볼륨:"+volume);
 	}
 	
 }
