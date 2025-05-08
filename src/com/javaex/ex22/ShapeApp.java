@@ -36,12 +36,26 @@ public class ShapeApp {
 		Shape [] sArray = new Shape[3];
 		
 		//도형담기
+		
+		//sArray[0] = t01; //업캐스팅 자동으로 섞어쓰기된다
 		sArray[0] = st;
 		sArray[1] = sc;
 		sArray[2] = sr;
 		
-		//전체 draw()로 출력 --> 자식쪽의 기능으로 사용할 수 없다)
-		st.draw();
+		for(int i = 0; i<sArray.length;i++) {
+			sArray[i].draw();
+		}
+		
+		
+		// 첫번째방(삼각형)의 가로값을 읽고 싶다 ---> 가려져서 못읽는다
+		System.out.println(((Triangle)sArray[0]).getWidth());
+		//사각형의 가로
+		System.out.println(((Rectangle)sArray[2]).getWidth());
+		//원의 반지름
+		System.out.println(((Circle)sArray[1]).getRadius());
+		
+		//Shape s = new Shape(); //abstract 가 있으면 메모리에 올리면 안됨
+		//s.draw();
 		
 		
 		
